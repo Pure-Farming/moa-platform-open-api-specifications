@@ -1,0 +1,133 @@
+swagger: "2.0"
+info:
+  description: "This is an example of breed api"
+  version: "1.0.0"
+  title: "Swagger Breed Playground"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "breed.playground.swagger.io"
+basePath: "/v1"
+tags:
+- name: "breeds"
+  description: "Everything about your breeds"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "https"
+- "http"
+paths:
+  /breeds:
+    get:
+      tags:
+      - "breeds"
+      summary: "Find all breeds "
+      description: "Find all the breeds stored"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Breed"
+  /breeds/search:
+    get:
+      tags:
+      - "breeds"
+      summary: "Search breeds by a single species type or multiple species types"
+      description: "Returns breeds matching the search criteria"
+      operationId: "getBreedBySpecies"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "Species type"
+        in: "query"
+        description: "types of breeds to return"
+        required: true
+        type: "array"
+        items:
+          type: "string"
+          enum:
+          - "cattle"
+          - "sheep"
+          - "deer"
+          - "goats"
+          default: "cattle"
+        collectionFormat: "multi"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Breed"
+        "400":
+          description: "Invalid breed type supplied"
+        "404":
+          description: "Breed not found"
+definitions:
+  Species:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      type:
+        type: "string"
+        enum:
+        - "cattle"
+        - "sheep"
+        - "deer"
+        - "goats"
+    xml:
+      name: "Species"
+  BreedCode:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      breedId:
+        type: "integer"
+        format: "int64"
+      sourceIdentifier:
+        type: "string"
+      code:
+        type: "string"
+    xml:
+      name: "Tag"
+  Breed:
+    type: "object"
+    required:
+    - "name"
+    - "codes"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      species:
+        $ref: "#/definitions/Species"
+      name:
+        type: "string"
+        example: "Jersey"
+      isICAR:
+        type: "boolean"
+        example: true
+      isCross:
+        type: "boolean"
+        example: false
+      codes:
+        type: "array"
+        xml:
+          name: "codes"
+          wrapped: true
+        items:
+           $ref: "#/definitions/BreedCode"
+    xml:
+      name: "Breed"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
