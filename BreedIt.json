@@ -1110,7 +1110,8 @@
         "tags": [
           "Download"
         ],
-        "summary": "Brings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nan example.  This is a very long line with some awesome description. This is a very long paragraoh that gives a full description of how the api works including an example.\r\nCan an API even be used without documentation for REST API and OpenAPI? While technically possible, it’s through good API documentation and API documentation best practices that developers first experience an API and get to know its functionality. Whether your API is meant for internal use, exposed to partners, or fully public, developers will need complete and accurate API documentation examples to best complete their integrations.\r\n            \r\nIn this API documentation guide, template, and tutorial, we’ll cover the basics of how to document APIs and the different types you’ll want for the comprehensive coverage developers require.We will also cover the basics of the commonly asked question ‘what is API documentation?’ in detail with an API documentation example. This will also include exploring what you will need in your API documentation template and how this translates into creating your first API documentation sample. We’ll also cover and look into API description documents examples as well as API description examples.",
+        "summary": "Brings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.",
+        "description": "This is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\n    * This is a very long paragraoh that gives a full description of how the api works including\r\n    * Brings back pdf registration report for the animal(s).\r\n    * Returns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\n    # Brings back pdf registration report for the animal(s).\r\n    # Returns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nBrings back pdf registration report for the animal(s).\r\nReturns PDF as a stream with pdf content type.\r\n            \r\nThis is a very long paragraoh that gives a full description of how the api works including\r\nan example.  This is a very long line with some awesome description. This is a very long paragraoh that gives a full description of how the api works including an example.\r\nCan an API even be used without documentation for REST API and OpenAPI? While technically possible, it’s through good API documentation and API documentation best practices that developers first experience an API and get to know its functionality. Whether your API is meant for internal use, exposed to partners, or fully public, developers will need complete and accurate API documentation examples to best complete their integrations.\r\nIn this API documentation guide, template, and tutorial, we’ll cover the basics of how to document APIs and the different types you’ll want for the comprehensive coverage developers require.We will also cover the basics of the commonly asked question ‘what is API documentation?’ in detail with an API documentation example. This will also include exploring what you will need in your API documentation template and how this translates into creating your first API documentation sample. We’ll also cover and look into API description documents examples as well as API description examples.",
         "requestBody": {
           "description": "All the animal values for the report.",
           "content": {
@@ -1365,7 +1366,7 @@
             "schema": {
               "type": "string",
               "format": "date",
-              "example": "2021-07-07"
+              "example": "2021-07-09"
             }
           },
           {
@@ -1375,7 +1376,7 @@
             "schema": {
               "type": "string",
               "format": "date",
-              "example": "2021-07-07"
+              "example": "2021-07-09"
             }
           }
         ],
@@ -1517,7 +1518,7 @@
             "schema": {
               "type": "string",
               "format": "date",
-              "example": "2021-07-07"
+              "example": "2021-07-09"
             }
           },
           {
@@ -1527,7 +1528,7 @@
             "schema": {
               "type": "string",
               "format": "date",
-              "example": "2021-07-07"
+              "example": "2021-07-09"
             }
           }
         ],
@@ -5070,7 +5071,7 @@
           "inspectionDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "durableKey": {
             "type": "integer",
@@ -5163,7 +5164,7 @@
           "inspectionDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "classificationAward": {
             "type": "string",
@@ -5220,7 +5221,7 @@
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "breedMakeUp": {
             "type": "string",
@@ -5238,13 +5239,16 @@
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "primaryBreed": {
             "type": "string",
             "nullable": true
           },
           "isRegistered": {
+            "type": "boolean"
+          },
+          "canInspectorAssignAward": {
             "type": "boolean"
           }
         },
@@ -5302,7 +5306,7 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "setStatusAsCompleted": {
             "type": "boolean"
@@ -5350,13 +5354,13 @@
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "inspectionDate": {
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "inspectorCode": {
             "type": "string",
@@ -5417,7 +5421,7 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "inspection": {
             "$ref": "#/components/schemas/BreedSocieties.BreedIT.Application.TopManagement.Common.Models.AppointmentModels.AppointmentDetailsDto+InspectionDetails"
@@ -5749,7 +5753,7 @@
           "topInspectionDate": {
             "type": "string",
             "format": "date-time",
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "inspectorName": {
             "type": "string",
@@ -6024,7 +6028,7 @@
           "animalInspectionDateTime": {
             "type": "string",
             "format": "date-time",
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "isAdditionalAnimal": {
             "type": "boolean"
@@ -6137,7 +6141,7 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "appointmentStatus": {
             "type": "string",
@@ -6184,29 +6188,29 @@
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "firstHerdTestDate": {
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "secondHerdTestDate": {
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "milkingTimeAM": {
             "type": "string",
             "nullable": true,
-            "example": "15:57:51.5760587"
+            "example": "13:48:11.35428"
           },
           "milkingTimePM": {
             "type": "string",
             "nullable": true,
-            "example": "15:57:51.5760587"
+            "example": "13:48:11.35428"
           },
           "isMilkingOnceADay": {
             "type": "boolean",
@@ -6489,7 +6493,7 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "assistantOnFarm": {
             "type": "boolean"
@@ -6565,7 +6569,7 @@
             "type": "string",
             "format": "date",
             "nullable": true,
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "animalAge": {
             "type": "integer",
@@ -6683,7 +6687,7 @@
           "inspectionStartDateTime": {
             "type": "string",
             "format": "date-time",
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "inspectorPtptCodes": {
             "type": "string",
@@ -6705,7 +6709,7 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           }
         },
         "additionalProperties": false
@@ -6830,7 +6834,7 @@
           "inspectionDate": {
             "type": "string",
             "format": "date-time",
-            "example": "2021-07-07T15:57:51.5760587\\u002B12:00"
+            "example": "2021-07-09T13:48:11.35428\\u002B12:00"
           },
           "isDownloadEnabled": {
             "type": "boolean"
@@ -6918,12 +6922,12 @@
           "startDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "endDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "notes": {
             "type": "string",
@@ -6964,12 +6968,12 @@
           "startDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "endDate": {
             "type": "string",
             "format": "date",
-            "example": "2021-07-07"
+            "example": "2021-07-09"
           },
           "numberOfAppointments": {
             "type": "integer",
